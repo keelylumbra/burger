@@ -1,0 +1,27 @@
+body {
+	background-color: black;
+	text-align: center;
+	color: #F8F8FF;
+	
+}
+
+.jumbotron {
+	background-color: black;
+	text-align: center;
+	color: #F8F8FF;
+
+}
+
+#true {
+	float: left;
+}
+
+.clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+
+
+#burgerInput {
+	text-align: center;
+}
