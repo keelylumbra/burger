@@ -12,8 +12,15 @@ body {
 
 }
 
+#false{
+	float: left;
+	color: green;
+}
+
 #true {
 	float: left;
+	color: red;
+
 }
 
 .clearfix {
@@ -25,3 +32,4 @@ body {
 #burgerInput {
 	text-align: center;
 }
+
