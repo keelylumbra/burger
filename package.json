@@ -4,6 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,6 +13,9 @@
   },
   "author": "Keely Lumbra",
   "license": "ISC",
+  "engines": {
+    "node": "v4.4.4"
+  }
   "bugs": {
     "url": "https://github.com/keelylumbra/burger/issues"
   },
