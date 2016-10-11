@@ -17,21 +17,21 @@ router.get('/burgers', function (req, res) {
 	});
 });
 
-// router.post('/burgers/create', function (req, res) {
-// 	burgers.insertOne(['burgers','name', false], [req.body.name, req.body.], function () {
-// 		res.redirect('/cats');
-// 	});
-// });
+router.post('/burgers/create', function (req, res) {
+	burgers.insertOne(['burger_name', 'devoured'], [req.body.name, false], function () {
+		res.redirect('/burgers');
+	});
+});
 
-// router.put('/cats/update/:id', function (req, res) {
-// 	var condition = 'id = ' + req.params.id;
+router.put('/burgers/update/:id', function (req, res) {
+	var condition = 'id = ' + req.params.id;
 
-// 	console.log('condition', condition);
+	console.log('condition', condition);
 
-// 	burgers.update({ sleepy: req.body.sleepy }, condition, function () {
-// 		res.redirect('/cats');
-// 	});
-// });
+	burgers.updateOne({ devoured: req.body.devoured }, condition, function () {
+		res.redirect('/burgers');
+	});
+});
 
 // router.delete('/cats/delete/:id', function (req, res) {
 // 	var id = req.params.id;
