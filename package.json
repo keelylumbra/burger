@@ -15,7 +15,7 @@
   "license": "ISC",
   "engines": {
     "node": "v4.4.4"
-  }
+  },
   "bugs": {
     "url": "https://github.com/keelylumbra/burger/issues"
   },
